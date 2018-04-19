@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+	<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('main');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="mobile-nav">
+		<div class="nav__list">
+			<ul>
+				<li class="nav__item"><a href="" class="nav__link nav__link_selected">Автосервис</a></li>
+				<li class="nav__item"><a href="" class="nav__link">Тенты</a></li>
+				<li class="nav__item"><a href="" class="nav__link">Каркасы</a></li>
+				<li class="nav__item"><a href="" class="nav__link">Галерея</a></li>
+				<li class="nav__item"><a href="" class="nav__link">Новости и статьи</a></li>
+				<li class="nav__item"><a href="" class="nav__link">Отзывы</a></li>
+				<li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="search">
+			<div class="search__btn-show"><i class="icon icon-search"></i></div>
+			<div class="search__wrap">
+				<div class="search__input"><input type="text"></div>
+				<div class="search__btn"><i class="icon icon-search"></i></div>
+			</div>
+		</div>
+		<div class="panel__contacts col">
+			<div class="panel__contact contact">
+				<div class="contact__icon"><i class="icon icon-marker-yellow"></i></div>
+				<div class="contact__wrap">Минский район, п. Ратомка <br>ул. Красивая, 30</div>
+			</div>
+			<div class="panel__contact contact">
+				<div class="contact__icon"><i class="icon icon-clock"></i></div>
+				<div class="contact__wrap">9:00 - 20:00, без выходных</div>
+			</div>
+			<div class="panel__contact contact">
+				<div class="contact__icon"><i class="icon icon-phone"></i></div>
+				<div class="contact__wrap"><a href="tel:+375296765200"><strong>+375 29</strong> 676 52 00</a></div>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="panel">
+			<div class="case">
+				<div class="panel__wrap row">
+					<div class="panel__logo col"><a href=""><img src="upload/logos/logo-blue.png" alt=""></a></div>
+					<div class="panel__contacts col">
+						<div class="panel__contact contact">
+							<div class="contact__icon"><i class="icon icon-marker-yellow"></i></div>
+							<div class="contact__wrap">Минский район, п. Ратомка <br>ул. Красивая, 30</div>
+						</div>
+						<div class="panel__contact contact">
+							<div class="contact__icon"><i class="icon icon-clock"></i></div>
+							<div class="contact__wrap">9:00 - 20:00, без выходных</div>
+						</div>
+						<div class="panel__contact contact">
+							<div class="contact__icon"><i class="icon icon-phone"></i></div>
+							<div class="contact__wrap fz14"><a href="tel:+375296765200"><strong>+375 29</strong> 676 52 00</a></div>
+						</div>
+					</div>
+					<a data-fancybox data-src="#popup-callback" href="javascript:;" class="panel__btn btn btn_yellow-border btn_small col">заказать звонок</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="case row">
+				<div class="nav__list col">
+					<ul>
+						<li class="nav__item nav__item_selected"><a href="" class="nav__link">Автосервис</a></li>
+						<li class="nav__item"><a href="" class="nav__link">Тенты</a></li>
+						<li class="nav__item"><a href="" class="nav__link">Каркасы</a></li>
+						<li class="nav__item"><a href="" class="nav__link">Галерея</a></li>
+						<li class="nav__item"><a href="" class="nav__link">Новости и статьи</a></li>
+						<li class="nav__item"><a href="" class="nav__link">Отзывы</a></li>
+						<li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="search col">
+					<div class="search__btn-show search__btn"><i class="icon icon-search"></i></div>
+					<div class="search__wrap">
+						<div class="search__input"><input type="text" placeholder="Поиск..."></div>
+						<div class="search__btn-submit search__btn"><i class="icon icon-search"></i></div>
+					</div>
+				</div>
+				<div class="mobile-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="main-banner bg-cover" style="background-image: url('template/img/bg/header-bg.png');">
+		<div class="case">
+			<div class="main-banner__title title"><span>Комплексный ремонт</span> <strong>грузовой техники</strong></div>
+			<div class="main-banner__list">
+				<ul>
+					<li>Профессиональное оборудование</li>
+					<li>Квалифицированный персонал</li>
+					<li>Высокая скорость работы</li>
+				</ul>
+			</div>
+			<a href="" class="main-banner__btn btn btn_red-bg btn_extra-big">Заказать <strong>РЕМОНТ</strong></a>
+		</div>
+	</div>
+
+	<main class="main">
+		<div class="counts">
+			<div class="case">
+				<div class="counts__wrap flex">
+					<div class="counts__item">
+						<div class="counts__icon"><i class="icon icon-calendar"></i></div>
+						<div class="counts__count">20</div>
+						<div class="counts__name">лет опыта</div>
+					</div>
+					<div class="counts__item">
+						<div class="counts__icon"><i class="icon icon-truck"></i></div>
+						<div class="counts__count">1000+</div>
+						<div class="counts__name">отремонтированных <br>грузовиков</div>
+					</div>
+					<div class="counts__item">
+						<div class="counts__icon"><i class="icon icon-peoples"></i></div>
+						<div class="counts__count">2000+</div>
+						<div class="counts__name">довольных <br>клиентов</div>
+					</div>
+					<div class="counts__item">
+						<div class="counts__icon"><i class="icon icon-service"></i></div>
+						<div class="counts__count">13000+</div>
+						<div class="counts__name">установленных <br>запчастей</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="services bg-gray">
+			<div class="case">
+				<div class="services__title title title_line">НАШИ <strong>УСЛУГИ</strong></div>
+				<div class="services__list flex">
+					<div class="services__item">
+						<div class="services__img"><img src="upload/services/1.png" alt=""></div>
+						<div class="services__subtitle"><a href="">Ремонт грузовиков</a></div>
+						<div class="services__data">
+							<ul>
+								<li>Ремонт двигателя</li>
+								<li>Ремонт топливной системы</li>
+								<li>Ремонт системы охлаждения</li>
+								<li>Ремонт систем питания воздухом</li>
+								<li>Ремонт систем выхлопа</li>
+							</ul>
+						</div>
+						<a href="" class="services__btn btn btn_red-bg btn_normal">подробнее</a>
+					</div>
+					<div class="services__item">
+						<div class="services__img"><img src="upload/services/2.png" alt=""></div>
+						<div class="services__subtitle"><a href="">Ремонт прицепов</a></div>
+						<div class="services__data">
+							<ul>
+								<li>Ремонт подвески прицепа</li>
+								<li>Ремонт тормозных систем</li>
+								<li>Ремонт электрики и электропроводки</li>
+								<li>Ремонт пневмосистем прицепа</li>
+								<li>Ремонт тормозных систем</li>
+							</ul>
+						</div>
+						<a href="" class="services__btn btn btn_red-bg btn_normal">подробнее</a>
+					</div>
+					<div class="services__item">
+						<div class="services__img"><img src="upload/services/3.png" alt=""></div>
+						<div class="services__subtitle"><a href="">Компьютерная диагностика</a></div>
+						<div class="services__data">
+							<ul>
+								<li>Ремонт двигателя</li>
+								<li>Ремонт топливной системы</li>
+								<li>Ремонт системы охлаждения</li>
+								<li>Ремонт систем питания воздухом</li>
+							</ul>
+						</div>
+						<a href="" class="services__btn btn btn_red-bg btn_normal">подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="diagnostics bg-cover">
+			<div class="case">
+				<div class="diagnostics__wrap">
+					<div class="diagnostics__title title"><span>Запишитесь на диагностику</span> <strong>прямо сейчас!</strong></div>
+					<div class="diagnostics__elements">
+						<div class="diagnostics__input input"><input type="text" placeholder="Имя"></div>
+						<div class="diagnostics__input input input_tel"><input type="text" placeholder="Телефон"></div>
+						<div class="diagnostics__input input"><input type="text" placeholder="E-mail"></div>
+					</div>
+					<button class="diagnostics__btn btn btn_red-bg btn_big">записаться</button>
+				</div>
+			</div>
+		</div>
+		<div class="clients">
+			<div class="case">
+				<div class="clients__title title title_line">МЫ <strong>РАБОТАЕМ С</strong></div>
+				<div class="clients__list">
+					<div class="clients__item"><img src="upload/clients/volvo.png" alt=""></div>
+					<div class="clients__item"><img src="upload/clients/ror.png" alt=""></div>
+					<div class="clients__item"><img src="upload/clients/daf.png" alt=""></div>
+					<div class="clients__item"><img src="upload/clients/iveco.png" alt=""></div>
+					<div class="clients__item"><img src="upload/clients/renault.png" alt=""></div>
+					<div class="clients__item"><img src="upload/clients/ror.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio bg-gray">
+			<div class="case">
+				<div class="portfolio__title title title_line">Наша <strong>работа</strong></div>
+				<div class="portfolio__list">
+					<div class="portfolio__img">
+						<div class="portfolio__img-item"><img src="upload/portfolio/big/1.png" alt=""></div>
+						<div class="portfolio__img-item"><img src="upload/portfolio/big/1.png" alt=""></div>
+						<div class="portfolio__img-item"><img src="upload/portfolio/big/1.png" alt=""></div>
+						<div class="portfolio__img-item"><img src="upload/portfolio/big/1.png" alt=""></div>
+						<div class="portfolio__img-item"><img src="upload/portfolio/big/1.png" alt=""></div>
+						<div class="portfolio__img-item"><img src="upload/portfolio/big/1.png" alt=""></div>
+						<div class="portfolio__img-item"><img src="upload/portfolio/big/1.png" alt=""></div>
+						<div class="portfolio__img-item"><img src="upload/portfolio/big/1.png" alt=""></div>
+					</div>
+					<div class="portfolio__imgs">
+						<div class="portfolio__imgs-item"><a href="upload/portfolio/small/1.png" data-fancybox><img src="upload/portfolio/small/1.png" alt=""></a></div>
+						<div class="portfolio__imgs-item"><a href="upload/portfolio/small/2.png" data-fancybox><img src="upload/portfolio/small/2.png" alt=""></a></div>
+						<div class="portfolio__imgs-item"><a href="upload/portfolio/small/3.png" data-fancybox><img src="upload/portfolio/small/3.png" alt=""></a></div>
+						<div class="portfolio__imgs-item"><a href="upload/portfolio/small/4.png" data-fancybox><img src="upload/portfolio/small/4.png" alt=""></a></div>
+						<div class="portfolio__imgs-item"><a href="upload/portfolio/small/5.png" data-fancybox><img src="upload/portfolio/small/5.png" alt=""></a></div>
+						<div class="portfolio__imgs-item"><a href="upload/portfolio/small/3.png" data-fancybox><img src="upload/portfolio/small/3.png" alt=""></a></div>
+						<div class="portfolio__imgs-item"><a href="upload/portfolio/small/2.png" data-fancybox><img src="upload/portfolio/small/2.png" alt=""></a></div>
+						<div class="portfolio__imgs-item"><a href="upload/portfolio/small/2.png" data-fancybox><img src="upload/portfolio/small/2.png" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="awning">
+			<div class="case row">
+				<div class="awning__img col"><img src="upload/truck-shadow.png" alt=""></div>
+				<div class="awning__content col">
+					<div class="awning__title title">Наши специалисты <strong>производят и ремонтируют ТЕНТЫ!</strong></div>
+					<div class="awning__text">В короткий срок производим грузовые тенты, каркасы, ворота, шатры, ангары, защитные и гаражные шторы, а также шторы для автомоек и каркасно-тентовые бассейны. Работаем по конкурентным ценам.</div>
+					<div class="awning__btns">
+						<a href="" class="awning__btn btn btn_red-bg btn_normal">Заказать Тент!</a>
+						<a href="" class="awning__btn btn btn_transparent	btn_transparent-white btn_normal">подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="news">
+			<div class="case">
+				<div class="news__title title title_line"><strong>Новости</strong></div>
+				<div class="news__list flex">
+					<a href="" class="news__item">
+						<div class="news__img"><img src="upload/news/1.png" alt=""></div>
+						<div class="news__subtitle">Увеличен срок гарантии на ремонтные работы!</div>
+						<div class="news__date">22 августа 2017</div>
+					</a>
+					<a href="" class="news__item">
+						<div class="news__img"><img src="upload/news/2.png" alt=""></div>
+						<div class="news__subtitle">Увеличен срок гарантии на ремонтные работы!</div>
+						<div class="news__date">22 августа 2017</div>
+					</a>
+					<a href="" class="news__item">
+						<div class="news__img"><img src="upload/news/3.png" alt=""></div>
+						<div class="news__subtitle">Увеличен срок гарантии на ремонтные работы!</div>
+						<div class="news__date">22 августа 2017</div>
+					</a>
+					<a href="" class="news__item">
+						<div class="news__img"><img src="upload/news/4.png" alt=""></div>
+						<div class="news__subtitle">Увеличен срок гарантии на ремонтные работы!</div>
+						<div class="news__date">22 августа 2017</div>
+					</a>
+				</div>
+				<a href="" class="news__btn btn btn_red-bg btn_normal">ВСЕ НОВОСТИ</a>
+			</div>
+		</div>
+		<div class="news bg-gray">
+			<div class="case">
+				<div class="news__title title title_line">полезные <strong>статьи</strong></div>
+				<div class="news__list flex">
+					<a href="" class="news__item">
+						<div class="news__img"><img src="upload/news/5.png" alt=""></div>
+						<div class="news__subtitle">Увеличен срок гарантии на ремонтные работы!</div>
+						<div class="news__date">22 августа 2017</div>
+					</a>
+					<a href="" class="news__item">
+						<div class="news__img"><img src="upload/news/6.png" alt=""></div>
+						<div class="news__subtitle">Увеличен срок гарантии на ремонтные работы!</div>
+						<div class="news__date">22 августа 2017</div>
+					</a>
+					<a href="" class="news__item">
+						<div class="news__img"><img src="upload/news/7.png" alt=""></div>
+						<div class="news__subtitle">Увеличен срок гарантии на ремонтные работы!</div>
+						<div class="news__date">22 августа 2017</div>
+					</a>
+					<a href="" class="news__item">
+						<div class="news__img"><img src="upload/news/8.png" alt=""></div>
+						<div class="news__subtitle">Увеличен срок гарантии на ремонтные работы!</div>
+						<div class="news__date">22 августа 2017</div>
+					</a>
+				</div>
+				<a href="" class="news__btn btn btn_red-bg btn_normal">ВСЕ статьи</a>
+			</div>
+		</div>
+		<div class="work bg-cover">
+			<div class="case">
+				<div class="work__title title title_line">КАК МЫ <strong>РАБОТАЕМ</strong></div>
+				<div class="work__list flex">
+					<div class="work__item">
+						<div class="work__img"><img src="upload/work/1.png" alt=""></div>
+						<div class="work__subtitle">ЗАЯВКА</div>
+						<div class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor</div>
+						<a data-fancybox data-src="#popup-callback" href="javascript:;" class="work__btn btn btn_red-bg btn_normal">Оставить заявку</a>
+					</div>
+					<div class="work__item">
+						<div class="work__img"><img src="upload/work/2.png" alt=""></div>
+						<div class="work__subtitle">Диагностика</div>
+						<div class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor</div>
+					</div>
+					<div class="work__item">
+						<div class="work__img"><img src="upload/work/3.png" alt=""></div>
+						<div class="work__subtitle">Ремонт</div>
+						<div class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor</div>
+					</div>
+					<div class="work__item">
+						<div class="work__img"><img src="upload/work/4.png" alt=""></div>
+						<div class="work__subtitle">Доставка</div>
+						<div class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor</div>
+					</div>
+					<div class="work__item">
+						<div class="work__img"><img src="upload/work/5.png" alt=""></div>
+						<div class="work__subtitle">Гарантия</div>
+						<div class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="team">
+			<div class="case">
+				<div class="team__title title title_line">НАША <strong>КОМАНДА</strong></div>
+				<div class="team__list">
+					<div class="team__item row_line">
+						<div class="team__left col_line">
+							<div class="team__img"><img src="upload/team/1.png" alt=""></div>
+							<div class="team__socials">
+								<ul>
+									<li><a href="//facebook.com" target="_blank" class="facebook"><i class="icon icon-facebook-white"></i></a></li>
+									<li><a href="//vk.com" target="_blank" class="vk"><i class="icon icon-vk-white"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team__right col_line">
+							<div class="team__subtitle">Георгий Иванов</div>
+							<div class="team__desc">автомеханик</div>
+							<div class="team__experience">Опыт работы: 8 лет</div>
+							<div class="team__phone"><i class="icon icon-phone"></i><a href="tel:+375296765200"><strong>+375 29</strong> 676 52 00</a></div>
+							<div class="team__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+						</div>
+					</div>
+					<div class="team__item row_line">
+						<div class="team__left col_line">
+							<div class="team__img"><img src="upload/team/2.png" alt=""></div>
+							<div class="team__socials">
+								<ul>
+									<li><a href="//facebook.com" target="_blank" class="facebook"><i class="icon icon-facebook-white"></i></a></li>
+									<li><a href="//vk.com" target="_blank" class="vk"><i class="icon icon-vk-white"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team__right col_line">
+							<div class="team__subtitle">Сергей Петров</div>
+							<div class="team__desc">автомеханик</div>
+							<div class="team__experience">Опыт работы: 8 лет</div>
+							<div class="team__phone"><i class="icon icon-phone"></i><a href="tel:+375296765200"><strong>+375 29</strong> 676 52 00</a></div>
+							<div class="team__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+						</div>
+					</div>
+					<div class="team__item row_line">
+						<div class="team__left col_line">
+							<div class="team__img"><img src="upload/team/1.png" alt=""></div>
+							<div class="team__socials">
+								<ul>
+									<li><a href="//facebook.com" target="_blank" class="facebook"><i class="icon icon-facebook-white"></i></a></li>
+									<li><a href="//vk.com" target="_blank" class="vk"><i class="icon icon-vk-white"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team__right col_line">
+							<div class="team__subtitle">Георгий Иванов</div>
+							<div class="team__desc">автомеханик</div>
+							<div class="team__experience">Опыт работы: 8 лет</div>
+							<div class="team__phone"><i class="icon icon-phone"></i><a href="tel:+375296765200"><strong>+375 29</strong> 676 52 00</a></div>
+							<div class="team__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+						</div>
+					</div>
+					<div class="team__item row_line">
+						<div class="team__left col_line">
+							<div class="team__img"><img src="upload/team/2.png" alt=""></div>
+							<div class="team__socials">
+								<ul>
+									<li><a href="//facebook.com" target="_blank" class="facebook"><i class="icon icon-facebook-white"></i></a></li>
+									<li><a href="//vk.com" target="_blank" class="vk"><i class="icon icon-vk-white"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team__right col_line">
+							<div class="team__subtitle">Сергей Петров</div>
+							<div class="team__desc">автомеханик</div>
+							<div class="team__experience">Опыт работы: 8 лет</div>
+							<div class="team__phone"><i class="icon icon-phone"></i><a href="tel:+375296765200"><strong>+375 29</strong> 676 52 00</a></div>
+							<div class="team__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="reviews bg-gray">
+			<div class="case">
+				<div class="reviews__title title title_line"><strong>Отзывы</strong> о нашей работе</div>
+				<div class="reviews__list flex">
+					<div class="reviews__item">
+						<div class="reviews__wrap">
+							<div class="reviews__wrap-scroll">
+								<div class="nano">
+									<div class="nano-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__persona row_line">
+							<div class="reviews__img col_line"><img src="upload/reviews/1.png" alt=""></div>
+							<div class="reviews__data col_line">
+								<div class="reviews__name">владимир</div>
+								<div class="reviews__position">Водитель</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__wrap">
+							<div class="reviews__wrap-scroll">
+								<div class="nano">
+									<div class="nano-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__persona row_line">
+							<div class="reviews__img col_line"><img src="upload/reviews/2.png" alt=""></div>
+							<div class="reviews__data col_line">
+								<div class="reviews__name">Станислав</div>
+								<div class="reviews__position">Водитель</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__wrap">
+							<div class="reviews__wrap-scroll">
+								<div class="nano">
+									<div class="nano-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__persona row_line">
+							<div class="reviews__img col_line"><img src="upload/reviews/3.png" alt=""></div>
+							<div class="reviews__data col_line">
+								<div class="reviews__name">Андрей</div>
+								<div class="reviews__position">Водитель</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contacts-main">
+			<div class="case">
+				<div class="contacts-main__title title">ПРИЕЗЖАЙТЕ К <strong>НАМ!</strong></div>
+				<div class="contacts-main__list flex">
+					<div class="contacts-main__item contacts-main__item_address">
+						<div class="contacts-main__subtitle">Адрес:</div>
+						<div class="contacts-main__text">
+							<p>220012, Минск, пр. Независимости, <br>д. 85Г, офис 107</p>
+						</div>
+					</div>
+					<div class="contacts-main__item contacts-main__item_time">
+						<div class="contacts-main__subtitle">Время работы:</div>
+						<div class="contacts-main__text">
+							<p>9:00­-19:00 пн­пт, <br>сб 10:00­ - 16:00, вс -­ вых. </p>
+						</div>
+					</div>
+					<div class="contacts-main__item contacts-main__item_phone">
+						<div class="contacts-main__subtitle">Телефоны:</div>
+						<div class="contacts-main__text">
+							<p><a href="tel:+375441111111"><strong>+375 44</strong> 111-11-11</a> Velcom</p>
+							<p><a href="tel:+375331111111"><strong>+375 33</strong> 111-11-11</a> МТС</p>
+							<p><a href="tel:+375171111111"><strong>+375 17</strong> 111-11-11</a> Городской</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="map-main" id="map-main"></div>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script>
+			ymaps.ready(init);
+			var myMap;
+
+			function init(){
+					myMap = new ymaps.Map ("map-main", {
+							center: [53.896214, 27.553423],
+							zoom: 17
+					});
+
+					myMap.controls.remove('searchControl').remove('trafficControl').remove('geolocationControl');
+
+					myMap.behaviors.disable(['drag', 'scrollZoom']);
+
+					myPin = new ymaps.GeoObjectCollection({}, {
+						iconLayout: 'default#image',
+						iconImageHref: 'upload/marker-red.png',
+						iconImageSize: [33, 48]
+					});
+
+					myPlacemark1 = new ymaps.Placemark([53.896214, 27.553423], {
+						balloonContentHeader: '<img src="upload/logos/logo-blue.png">'
+					});
+
+
+					myPin.add(myPlacemark1);
+
+					myMap.geoObjects.add(myPin);
+			}
+		</script>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="case row">
+				<div class="footer__data col">
+					<div class="footer__logo"><a href=""><img src="upload/logos/logo-white.png" alt=""><img src="upload/logos/logo-blue.png" alt=""></a></div>
+					<div class="row">
+						<div class="footer__contacts col right">
+							<div class="footer__contact">
+								<div class="footer__contact-title">Адрес</div>
+								<div class="footer__contact-data">
+									<p>115230, г. Минск, <br>ул. Карла Маркса, <br>д. 7, стр. 9</p>
+								</div>
+							</div>
+							<div class="footer__contact">
+								<div class="footer__contact-title">контакты</div>
+								<div class="footer__contact-data">
+									<p>Тел: <a href="tel:+375441503400">+375 44 150-34-00</a>,</p>
+									<p>E-mail: <a href="mailto:mail+26836@beltransline.by">mail+26836@beltransline.by</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="footer__nav col">
+							<ul>
+								<li><a href="">Автосервис</a></li>
+								<li><a href="">Тенты</a></li>
+								<li><a href="">Каркасы</a></li>
+								<li><a href="">Галерея</a></li>
+								<li><a href="">Новости и статьи</a></li>
+								<li><a href="">Отзывы</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__form col">
+					<div class="footer__subtitle title">СВЯЖИТЕСЬ <strong>с НАМИ</strong></div>
+					<div class="footer__input input"><input type="text" placeholder="Имя"></div>
+					<div class="footer__input input input_tel"><input type="text" placeholder="Телефон"></div>
+					<div class="footer__textarea textarea"><textarea placeholder="Сообщение"></textarea></div>
+					<button class="footer__btn btn btn_red-bg btn_big">Связаться</button>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="case">
+				<div class="footer__dev"><a href="" target="_blank">Разработка сайта – студия <strong>WebMatrix</strong></a></div>
+			</div>
+		</div>
+	</footer>
+	<div class="popup popup_callback" id="popup-callback">
+		<div class="popup__title title">Обратный звонок</div>
+		<div class="popup__input input"><input type="text" placeholder="Имя"></div>
+		<div class="popup__input input input_tel"><input type="text" placeholder="Телефон"></div>
+		<div class="popup__input input"><input type="text" placeholder="Е-мейл"></div>
+		<button class="popup__btn btn btn_red-bg btn_normal">Отправить</button>
+	</div>
+</body>
+</html>
