@@ -24,7 +24,15 @@
 	<div class="mobile-nav">
 		<div class="nav__list">
 			<ul>
-				<li class="nav__item"><a href="" class="nav__link nav__link_selected">Автосервис</a></li>
+				<li class="nav__item">
+					<a href="" class="nav__link nav__link_selected">Автосервис</a>
+					<ul class="nav__sublist">
+						<li class="nav__subitem"><a href="" class="nav__sublink">Ремонт грузовиков</a></li>
+						<li class="nav__subitem"><a href="" class="nav__sublink">Ремонт прицепов</a></li>
+						<li class="nav__subitem"><a href="" class="nav__sublink">Компьютерная диагностика</a></li>
+						<li class="nav__subitem"><a href="" class="nav__sublink">Цены</a></li>
+					</ul>
+				</li>
 				<li class="nav__item"><a href="" class="nav__link">Тенты</a></li>
 				<li class="nav__item"><a href="" class="nav__link">Каркасы</a></li>
 				<li class="nav__item"><a href="" class="nav__link">Галерея</a></li>
@@ -32,27 +40,6 @@
 				<li class="nav__item"><a href="" class="nav__link">Отзывы</a></li>
 				<li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
 			</ul>
-		</div>
-		<div class="search">
-			<div class="search__btn-show"><i class="icon icon-search"></i></div>
-			<div class="search__wrap">
-				<div class="search__input"><input type="text"></div>
-				<div class="search__btn"><i class="icon icon-search"></i></div>
-			</div>
-		</div>
-		<div class="panel__contacts col">
-			<div class="panel__contact contact">
-				<div class="contact__icon"><i class="icon icon-marker-yellow"></i></div>
-				<div class="contact__wrap">Минский район, п. Ратомка <br>ул. Красивая, 30</div>
-			</div>
-			<div class="panel__contact contact">
-				<div class="contact__icon"><i class="icon icon-clock"></i></div>
-				<div class="contact__wrap">9:00 - 20:00, без выходных</div>
-			</div>
-			<div class="panel__contact contact">
-				<div class="contact__icon"><i class="icon icon-phone"></i></div>
-				<div class="contact__wrap"><a href="tel:+375296765200"><strong>+375 29</strong> 676 52 00</a></div>
-			</div>
 		</div>
 	</div>
 	<header class="header">
@@ -82,7 +69,15 @@
 			<div class="case row">
 				<div class="nav__list col">
 					<ul>
-						<li class="nav__item nav__item_selected"><a href="" class="nav__link">Автосервис</a></li>
+						<li class="nav__item nav__item_selected">
+							<a href="" class="nav__link nav__link_selected">Автосервис</a>
+							<ul class="nav__sublist">
+								<li class="nav__subitem"><a href="" class="nav__sublink">Ремонт грузовиков</a></li>
+								<li class="nav__subitem"><a href="" class="nav__sublink">Ремонт прицепов</a></li>
+								<li class="nav__subitem"><a href="" class="nav__sublink">Компьютерная диагностика</a></li>
+								<li class="nav__subitem"><a href="" class="nav__sublink">Цены</a></li>
+							</ul>
+						</li>
 						<li class="nav__item"><a href="" class="nav__link">Тенты</a></li>
 						<li class="nav__item"><a href="" class="nav__link">Каркасы</a></li>
 						<li class="nav__item"><a href="" class="nav__link">Галерея</a></li>
@@ -116,7 +111,7 @@
 					<li>Высокая скорость работы</li>
 				</ul>
 			</div>
-			<a href="" class="main-banner__btn btn btn_red-bg btn_extra-big">Заказать <strong>РЕМОНТ</strong></a>
+			<a data-fancybox data-src="#popup-order" href="javascript:;" class="main-banner__btn btn btn_red-bg btn_extra-big">Заказать <strong>РЕМОНТ</strong></a>
 		</div>
 	</div>
 
@@ -594,11 +589,19 @@
 		</div>
 	</footer>
 	<div class="popup popup_callback" id="popup-callback">
-		<div class="popup__title title">Обратный звонок</div>
+		<div class="popup__close" data-fancybox-close><i class="icon icon-close-black"></i></div>
+		<div class="popup__title title">Заказ <strong>звонок</strong></div>
+		<div class="popup__input input"><input type="text" placeholder="Имя"></div>
+		<div class="popup__input input input_tel"><input type="text" placeholder="Телефон"></div>
+		<button class="popup__btn btn btn_red-bg btn_big">ЗАКАЗАТЬ</button>
+	</div>
+	<div class="popup popup_order" id="popup-order">
+		<div class="popup__close" data-fancybox-close><i class="icon icon-close-black"></i></div>
+		<div class="popup__title title">Заказ <strong>ремонт</strong></div>
 		<div class="popup__input input"><input type="text" placeholder="Имя"></div>
 		<div class="popup__input input input_tel"><input type="text" placeholder="Телефон"></div>
 		<div class="popup__input input"><input type="text" placeholder="Е-мейл"></div>
-		<button class="popup__btn btn btn_red-bg btn_normal">Отправить</button>
+		<button class="popup__btn btn btn_red-bg btn_big">ЗАКАЗАТЬ</button>
 	</div>
 </body>
 </html>

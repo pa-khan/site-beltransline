@@ -2,12 +2,775 @@
 	.case
 		width: 950px
 
+	.nav
+		padding-top: 0
+		&__item
+			margin-right: 20px
 
-@media screen and (max-width: 970px)
+	.panel
+		padding-bottom: 25px
+		&__btn
+			display: none
+
+	.search__wrap_toggle .search__input input
+		width: 235px
+
+	.counts
+		&__item
+			flex: none
+			width: 25%
+
+	.diagnostics
+		&__wrap
+			margin-left: 0px
+
+	.clients
+		padding-top: 25px
+		padding-bottom: 25px
+		&__title
+			margin-bottom: 25px
+			
+	.awning
+		padding-top: 0
+		padding-bottom: 25px
+		overflow: hidden
+		&__content
+			padding-top: 0
+			
+		&__img, &__content
+			float: none
+			margin-left: auto
+			margin-right: auto
+			max-width: 560px
+		&__img
+			img
+				margin-left: auto
+				margin-right: auto
+		&__title, &__text
+			margin-bottom: 15px
+			
+			
+			
+	.contacts-main
+		&__item
+			background-image: none !important
+			padding-left: 5px !important
+			padding-right: 5px !important
+			text-align: center
+	
+	.banner-page
+		margin-bottom: 27px
+	.page
+		&__nav
+			margin-bottom: 20px
+			ul
+				flex-wrap: wrap
+			li
+				width: calc(50% - 12px) !important
+				margin-bottom: 12px
+
+	.other-services_3
+		.other-services__item
+			width: 28%
+			&:nth-of-type(2)
+				margin-left: 60px
+				margin-right: 60px
+
+	.gallery
+		padding-top: 0
+		&__item
+			width: 100%
+			max-width: 260px
+			margin-bottom: 20px
+
+		&__link
+			padding-left: 13px
+			padding-right: 13px
+			bottom: 20px
+
+	.album
+		&__item
+			width: 100%
+			max-width: 180px
+			margin-bottom: 10px
+		&__btns
+			text-align: center
+			
+	.contacts-page
+		&__map, &__content
+			float: none
+			width: 100%
+		&__map
+			height: 300px
+			
+		&__content
+			height: auto
+			padding: 20px
+
+@media screen and (max-width: 992px)
 	.case
 		width: 750px
 
+	.panel
+		padding-top: 15px
+		&__logo
+			margin-top: 0
+			margin-right: 0
+			margin-bottom: 0
+			padding-top: 5px
+			margin-bottom: 15px
 
+
+		&__btn
+			display: block
+			right: 15px
+			top: 0
+			position: absolute
+
+		&__contacts
+			max-width: 100%
+			width: 100%
+			
+		&__contact
+			margin-right: 0
+			width: 33.333%
+
+	.nav
+		.case
+			position: static
+		&__list
+			float: none
+			padding-top: 0
+			text-align: center
+
+	.search
+		position: absolute
+		top: 15px
+		left: 50%
+		margin-left: -30px
+		&__wrap
+
+		&__btn
+			&-show
+				display: none
+			&-sumbit
+				display: block
+		&__input
+			input
+				width: 190px
+				padding: 0 40px 0 12px
+				height: 42px
+				border: 1px solid #BFBFBF
+
+	.search__btn-submit
+		display: block
+		position: absolute
+		top: 3px
+		right: 10px
+	
+			
+	.search__wrap_toggle .search__input input
+		width: 190px
+		padding-left: 15px
+		&:focus
+			border: 1px solid #f4c740
+			
+	.main-banner
+		padding-top: 50px
+		padding-bottom: 50px
+		&__title
+			font-size: 36px
+			line-height: 42px
+			margin-bottom: 20px
+			strong
+				font-size: 36px
+
+		&__btn
+			font-size: 18px
+			margin-top: 25px
+			padding-top: 14px
+			padding-bottom: 14px
+
+			
+	.nav
+		&__sublist
+			z-index: 1
+			text-align: left
+
+	.title
+		&_line
+			&:before
+				display: none
+
+	.services
+		padding-top: 20px
+		padding-bottom: 20px
+		&__title
+			margin-bottom: 15px
+		&__list
+			flex-wrap: wrap
+			
+		&__item
+			width: calc(50% - 16px)
+			margin-bottom: 16px
+
+	.diagnostics
+		padding-top: 30px
+		padding-bottom: 30px
+		.case
+			&:after
+				display: none
+		&__wrap
+			margin-left: auto
+			margin-right: auto
+			padding: 20px 15px 25px
+		&__title
+			margin-bottom: 15px
+		&__btn
+			margin-top: 25px
+			
+	.portfolio
+		padding-top: 25px
+		padding-bottom: 25px
+		&__title
+			margin-bottom: 20px
+
+	.news
+		padding-top: 25px
+		padding-bottom: 35px
+		&__title
+			margin-bottom: 20px
+		&__list
+			flex-wrap: wrap
+			padding-bottom: 0
+			
+		&__item
+			margin-bottom: 35px
+			max-width: 244px
+			// width: calc(50% - 21px)
+
+		&__img
+			margin-bottom: 15px
+		&__subtitle
+			margin-bottom: 10px
+			
+			
+	.work
+		padding-top: 25px
+		padding-bottom: 25px
+		&__title
+			margin-bottom: 20px
+		&__list
+			max-width: 280px
+			margin-left: auto
+			margin-right: auto
+			flex-wrap: wrap
+		&__item
+			width: 100%
+			margin-bottom: 80px
+			&:last-of-type
+				margin-bottom: 0
+			&:before
+				z-index: 1
+				left: 50%
+				right: auto
+				top: auto
+				bottom: -60px
+				transform: translate(-50%) rotate(55deg) !important
+			&:nth-of-type(even)
+				padding-top: 0
+			
+			
+	.team
+		padding-top: 25px
+		padding-bottom: 40px
+		&__title
+			margin-bottom: 15px
+			
+			
+	.reviews
+		padding-top: 25px
+		padding-bottom: 0
+		&__title
+			margin-bottom: 15px
+			
+
+	.contacts-main
+		padding-bottom: 0
+		&__list
+			flex-wrap: wrap
+
+			
+		&__item
+			padding-top: 0
+			width: 100%
+			
+		&__subtitle
+			margin-bottom: 5px
+			
+	.map-main
+		height: 350px
+
+
+	.footer
+		&__logo
+			text-align: center
+			img
+				margin-left: auto
+				margin-right: auto
+				
+
+		&__top
+			padding-top: 20px
+			padding-bottom: 20px
+			
+		&__contacts, &__nav, &__data, &__form
+			width: 100%
+			
+		&__form
+			border-left: none
+		
+		&__contacts
+			margin-bottom: 25px
+		&__contact
+			margin-bottom: 15px
+			&-title
+				margin-bottom: 10px
+		&__nav
+			li
+				margin-bottom: 12px
+		&__form
+			padding: 20px 30px 0
+
+	.other-services_3
+		.other-services
+			&__item
+				width: 33.333%
+				&:nth-of-type(2)
+					margin-left: 11px
+					margin-right: 11px
+			&__link
+				height: 65px
+				padding-top: 15px
+				
+			
+			
 @media screen and (max-width: 767px)
 	.case
 		width: 100%
+
+	.mobile
+
+	.header
+		.search
+			display: none
+
+	.panel
+		padding-bottom: 15px
+		&__logo
+			float: none
+			max-width: 280px
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 10px
+			img
+				padding-right: 60px
+			
+		&__btn
+			display: block
+			position: relative
+			top: 0
+			right: 0
+			margin-left: auto
+			margin-right: auto
+			float: none
+
+		&__contacts
+			display: block
+			float: none
+			max-width: 280px
+			margin-left: auto
+			margin-right: auto
+
+		&__contact
+			width: 100%
+			margin-bottom: 15px
+
+		&__btn
+			max-width: 280px
+	.mobile-nav
+		display: block
+		z-index: 10
+		position: fixed
+		top: 0
+		left: 0
+		width: 240px
+		height: 100%
+		color: #fff
+		background-color: #f4c740
+		transition: .3s
+		transform: translateX(-240px)
+		&_toggle
+			transform: translateX(0)
+		a
+			color: #fff
+		.nav
+			&__list
+				display: block
+				padding-top: 15px
+			&__item
+				display: block
+				margin-bottom: 10px
+			&__link
+				font-size: 21px
+				text-align: left
+				display: block
+				padding-left: 10px
+				padding-right: 10px
+				
+				
+				
+	.mobile-btn
+		position: absolute
+		right: 50%
+		top: 17px
+		margin-right: -140px
+		z-index: 1
+		cursor: pointer
+		span
+			display: block
+			width: 40px
+			height: 4px
+			margin-bottom: 7px
+			background-color: #f4c740
+			position: relative
+			transition: .3s
+			&:last-of-type
+				margin-bottom: 0
+		&_toggle
+			span
+				&:nth-of-type(1)
+					top: 11px
+					transform: rotate(45deg)
+				&:nth-of-type(2)
+					opacity: 0
+				&:nth-of-type(3)
+					top: -11px
+					transform: rotate(-45deg)
+			
+	.nav
+		padding-bottom: 0
+		&__list
+			display: none
+		&__sublist
+			display: none !important
+			
+	.main-banner
+		&__title
+			font-size: 30px
+			line-height: 38px
+			text-align: center
+			span, strong
+				color: #fff
+				background: none
+				-webkit-text-fill-color: #fff
+			strong
+				font-size: 30px
+
+	.counts
+		padding-bottom: 0
+		padding-top: 30px
+		&__wrap
+			flex-wrap: wrap
+			
+		&__item
+			width: 50%
+			margin-bottom: 30px
+
+		&__icon
+			margin-bottom: 5px
+
+		&__count
+			margin-bottom: 3px
+			
+
+	.title
+		font-size: 30px
+		text-align: center
+
+
+	.services
+		&__item
+			width: 100%
+			padding-bottom: 80px
+		&__subtitle
+			text-align: center
+			margin-bottom: 10px
+		&__subtitle, &__data
+			margin-left: 15px
+			margin-right: 15px
+		&__data
+			li
+				display: block
+			
+		&__btn
+			left: 50%
+			transform: translateX(-50%)
+			bottom: 17px
+			
+	.diagnostics
+		&__title
+			font-size: 26px
+			
+	.portfolio
+		&__img
+			padding: 0
+			border: none
+			margin-bottom: 0
+			background: none
+			box-shadow: none
+			
+		&__imgs
+			display: none
+
+		&__list
+			.slick-arrow
+				margin-top: -8px
+				transform: scale(.7) translate(0, -50%)
+				filter: grayscale(0%)
+				opacity: 1
+			.slick-prev
+				left: 2px
+
+			.slick-next
+				right: 2px
+
+	.awning
+		padding-bottom: 10px
+		&__title
+			font-size: 24px
+			line-height: normal
+			margin-bottom: 5px
+			
+		&__btns
+			text-align: center
+			
+		&__btn
+			max-width: 220px
+			margin-bottom: 5px
+			margin-left: auto
+			margin-right: auto
+			
+	.news
+		&__item
+			width: 100%
+			
+
+	.team
+		&__list
+			.slick-arrow
+				filter: grayscale(0%)
+				opacity: 1
+				top: 180px
+			
+		&__img
+			img
+				margin-left: auto
+				margin-right: auto
+		&__right
+			height: auto
+			padding-bottom: 30px
+			padding-top: 10px
+			padding-left: 15px
+		&__left, &__right
+			display: block
+			width: 100%
+		&__left
+			padding-top: 20px
+			background-color: #eceff2
+			
+		&__experience
+			margin-top: 10px
+			margin-bottom: 14px
+
+		&__text
+			margin-top: 15px
+			&:before
+				display: none
+			
+			
+	.reviews
+		&__list
+			flex-wrap: wrap
+			
+		&__item
+			width: 100%
+			margin-bottom: 25px
+
+		&__persona
+			padding-top: 25px
+
+		&__wrap
+			padding: 15px
+			&-scroll
+				height: 170px
+
+	.contacts-main
+		&__title
+			font-size: 26px
+			
+	.footer
+		&__subtitle
+			font-size: 26px
+			margin-bottom: 5px
+		&__form
+			padding-left: 0
+			padding-right: 0
+			padding-top: 20px
+		&__btn
+			max-width: 100%
+			
+	.popup
+		padding-left: 15px
+		padding-right: 15px
+		&__input
+			max-width: 100%
+
+	.banner-page
+		background-position: right center
+		min-height: 1px
+		padding-top: 30px
+		padding-bottom: 30px
+		&__title
+			margin-bottom: 10px
+			text-align: center
+			
+	.page
+		&__nav
+			margin-bottom: 20px
+			ul
+				flex-wrap: wrap
+			li
+				width: 100% !important
+				margin-bottom: 8px
+
+		&__main-img
+			margin-bottom: 15px
+			
+		&__wrap
+			margin-bottom: 30px
+			p
+				margin-bottom: 10px
+			
+		&__imgs
+			flex-wrap: wrap
+			margin-left: -2px
+			margin-right: -2px
+			margin-bottom: 10px
+			&-item
+				width: calc(25% - 4px)
+				margin-left: 2px
+				margin-right: 2px
+			
+		&__btn
+			margin-top: 20px
+			margin-bottom: 20px
+			font-size: 16px
+			margin-left: auto
+			margin-right: auto
+			
+	.other
+		padding-top: 20px
+		padding-bottom: 20px
+		&__list
+			flex-wrap: wrap
+			.news-page__item
+				margin-bottom: 30px
+				&:last-of-type
+					margin-bottom: 0
+		&__title
+			margin-bottom: 15px
+			text-align: center
+			
+	.other-services
+		
+			
+		&__item
+			width: 100%
+			max-width: 220px
+			margin-bottom: 22px
+
+	.other-services_3
+		.other-services
+			&__item
+				width: 100%
+				max-width: 220px
+				
+			&__link
+				height: auto
+				
+	
+	.main-title
+		font-size: 26px
+		line-height: 30px
+
+	.news-page
+		&__item
+			width: 100%
+			max-width: 250px
+			margin-bottom: 35px
+
+	.news-item
+		&__date
+			display: block
+			margin-right: 0
+			margin-bottom: 5px
+		&__body
+			padding-top: 15px
+			
+	.review-write
+		padding-top: 20px
+		padding-bottom: 20px
+		&__title
+			font-size: 26px
+		&__btn
+			margin-top: 20px
+			
+	.review-write__input
+		padding-right: 0 !important
+		padding-left: 0 !important
+		width: 100%
+		input
+			text-align: left
+	.review-write__textarea
+		textarea
+			padding-left: 10px
+	.file
+		span, p
+			display: none
+
+
+			
+
+@media screen and (max-width: 510px)
+	.page
+		&__imgs
+			flex-wrap: wrap
+			margin-left: -2px
+			margin-right: -2px
+			&-item
+				width: calc(50% - 4px)
+				margin-left: 2px
+				margin-right: 2px
+				margin-bottom: 4px
+	.album__btn.btn_red-bg
+		margin-right: 0
+	
+
+			
+@media screen and (max-width: 360px)
+	.counts
+		// padding-bottom: 15px
+		&__item
+			width: 100%
+			

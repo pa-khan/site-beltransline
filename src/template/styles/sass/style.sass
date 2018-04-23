@@ -204,8 +204,9 @@ img
 				border-bottom: 3px solid #b91717
 
 		
-.input input, .textarea textarea
+input, textarea, a
 	transition: .3s
+	outline: none
 
 
 
@@ -271,7 +272,7 @@ img
 		
 		
 .nav
-	padding-bottom: 22px
+	padding-bottom: 10px
 	&__list
 		padding-top: 11px
 		margin-right: 12px
@@ -285,7 +286,7 @@ img
 			position: absolute
 			width: 34px
 			height: 4px
-			bottom: -8px
+			bottom: 4px
 			left: 0
 			transition: .3s
 			background-color: #f4c740
@@ -294,8 +295,46 @@ img
 			&:before
 				opacity: 1
 		&:hover
+			font-weight: 700
+			font-size: 13.9px
 			&:before
 				opacity: 1
+				width: 100%
+			.nav
+				&__sublist
+					display: block
+	&__link
+		display: block
+		padding-bottom: 12px
+		
+	&__sublist
+		display: none
+		width: 240px
+		border-top: 2px solid #f4c740
+		border-bottom: 2px solid #f4c740
+		box-shadow: 0 5px 7px 1px rgba(0, 0, 0, 0.15)
+		background-color: #ffffff
+		position: absolute
+		top: 20px
+		left: 0
+		padding: 20px
+		
+	&__subitem
+		margin-bottom: 15px
+		&:last-of-type
+			margin-bottom: 0
+	&__sublink
+		font-weight: 400
+		color: #8f8f8f
+		text-transform: none
+		&:hover
+			color: #f4c740
+			font-weight: 700
+			border-color: #f4c740
+
+		
+		
+		
 
 		
 
@@ -327,13 +366,14 @@ img
 			.search
 				&__input
 					input
-						width: 200px
-						padding: 8px 10px
-						border: 1px solid #BFBFBF
+						width: 280px
+						padding: 8px 40px 8px 0
+						border-bottom: 1px solid #8f8f8f
 						&:focus
-							border: 1px solid #f4c740
+							border-bottom: 1px solid #f4c740
 				&__btn
 					display: inline-block
+					margin-left: -30px
 					
 					
 	&__btn
@@ -362,7 +402,7 @@ img
 .title
 	font-family: $font-family-2
 	strong
-		font-weight: 900
+		font-weight: 800
 	&_line
 		font-size: 36px
 		letter-spacing: -1.95px
@@ -484,8 +524,11 @@ img
 			background-color: #f4c740
 			box-shadow: 0 0 19px 2px rgba(0, 0, 0, 0.15)
 			.services
+				&__subtitle
+					a
+						color: #fff
 				&__data
-					// color: #fff
+					color: #fff
 					
 		&:nth-of-type(2)
 			.services
@@ -521,6 +564,7 @@ img
 				border-color: #fff
 
 	&__data
+		transition: .3s
 		li
 			margin-bottom: 12px
 			&:last-of-type
@@ -725,6 +769,10 @@ img
 		max-width: 170px
 		display: inline-block
 		vertical-align: middle
+		&.btn_transparent-white
+			border: 1px solid #fff
+			&:hover
+				border-bottom: 3px solid #b91717
 		
 		
 .news
@@ -1121,7 +1169,7 @@ img
 	margin-bottom: 40px
 	&__title
 		font-size: 30px
-		font-weight: 900
+		font-weight: 800
 		text-transform: uppercase
 		margin-bottom: 30px
 		-webkit-background-clip: text
@@ -1377,13 +1425,11 @@ img
 			margin-right: 19px
 		&.btn_transparent
 			max-width: 200px
-			border-left: 1px solid #a8aeb4
-			border-right: 1px solid #edeeef
-			border-top: 1px solid #fff	
+			border: 1px solid #edeeef
 			&:hover
-				border-top: 1px solid #eb3838
-				border-left: 1px solid #eb3838
-				border-right: 1px solid #eb3838
+				border-top: 1px solid transaprent
+				border-bottom: 3px solid #b91717
+				
 		
 
 .news-page
@@ -1544,11 +1590,8 @@ img
 		max-width: 220px
 		margin-top: 13px
 		margin-bottom: 15px
-		margin-left: 0
-		border-top: 1px solid #fff	
-		border-left: 1px solid #d6d9dc
-		border-right: 1px solid #d6d9dc
-		border-bottom: 3px solid #fff
+		margin-left: 0	
+		border: 1px solid #d6d9dc
 		&:hover
 			border: 1px solid #eb3838
 			border-bottom: 3px solid #b91717
@@ -1836,21 +1879,53 @@ img
 			
 		
 .popup
-	width: 400px
-	padding: 20px
 	display: none
+	background-color: #faf9f9
+	&_callback
+		width: 830px
+		text-align: center
+		.popup
+			&__input
+				width: 310px
+				display: inline-block
+				vertical-align: middle
+				margin-left: 4px
+				margin-right: 4px
+	&_order
+		width: 610px
+		padding: 20px 40px
 	&__title
 		text-align: center
 		text-transform: uppercase
-		font-size: 24px
-		margin-bottom: 15px
+		font-size: 30px
+		margin-bottom: 25px
 		font-weight: 700
+		-webkit-text-fill-color: transparent
+		-webkit-background-clip: text
+		background-image: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.5) 47%, black 100%)
 		
 	&__input
-		margin-bottom: 10px
+		margin-bottom: 8px
+		input
+			text-align: center
 		
 	&__btn
 		max-width: 220px
 		width: 100%
 		font-weight: 700
+		margin-top: 22px
 		
+	&__close
+		z-index: 1
+		position: absolute
+		top: 11px
+		right: 11px
+		cursor: pointer
+		transition: .3s
+		&:hover
+			transform: rotate(90deg)
+			i
+				@include sprite($close-yellow)
+		
+	.fancybox-close-small
+		display: none

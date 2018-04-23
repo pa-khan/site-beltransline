@@ -6,7 +6,7 @@
 
 .icon-arrow-left-yellow {
   background-image: url(../../img/sprite.png);
-  background-position: -201px -62px;
+  background-position: -201px 0px;
   width: 34px;
   height: 62px; }
 
@@ -18,7 +18,7 @@
 
 .icon-arrow-right-yellow {
   background-image: url(../../img/sprite.png);
-  background-position: -201px 0px;
+  background-position: -201px -62px;
   width: 34px;
   height: 62px; }
 
@@ -42,25 +42,37 @@
 
 .icon-clock {
   background-image: url(../../img/sprite.png);
-  background-position: -65px -150px;
+  background-position: -86px -176px;
   width: 20px;
   height: 20px; }
 
-.icon-facebook-white {
+.icon-close-black {
   background-image: url(../../img/sprite.png);
-  background-position: 0px -176px;
-  width: 24px;
-  height: 42px; }
+  background-position: -139px -110px;
+  width: 21px;
+  height: 21px; }
 
-.icon-facebook-yellow {
+.icon-close-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: -167px -124px;
+  width: 21px;
+  height: 21px; }
+
+.icon-facebook-white {
   background-image: url(../../img/sprite.png);
   background-position: -24px -176px;
   width: 24px;
   height: 42px; }
 
+.icon-facebook-yellow {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -176px;
+  width: 24px;
+  height: 42px; }
+
 .icon-home {
   background-image: url(../../img/sprite.png);
-  background-position: -94px -136px;
+  background-position: -188px -124px;
   width: 13px;
   height: 13px; }
 
@@ -72,13 +84,13 @@
 
 .icon-marker-yellow {
   background-image: url(../../img/sprite.png);
-  background-position: -139px -110px;
+  background-position: -48px -176px;
   width: 18px;
   height: 24px; }
 
 .icon-paperclip {
   background-image: url(../../img/sprite.png);
-  background-position: -103px -150px;
+  background-position: -86px -150px;
   width: 14px;
   height: 15px; }
 
@@ -90,13 +102,13 @@
 
 .icon-persona-blue {
   background-image: url(../../img/sprite.png);
-  background-position: -85px -150px;
+  background-position: -68px -150px;
   width: 18px;
   height: 18px; }
 
 .icon-phone {
   background-image: url(../../img/sprite.png);
-  background-position: -45px -150px;
+  background-position: -66px -176px;
   width: 20px;
   height: 20px; }
 
@@ -108,7 +120,7 @@
 
 .icon-search {
   background-image: url(../../img/sprite.png);
-  background-position: -167px -124px;
+  background-position: -45px -150px;
   width: 23px;
   height: 19px; }
 
@@ -126,12 +138,12 @@
 
 .icon-vk-white {
   background-image: url(../../img/sprite.png);
-  background-position: 0px -150px;
+  background-position: -94px -110px;
   width: 45px;
   height: 26px; }
 
 .icon-vk-yellow {
   background-image: url(../../img/sprite.png);
-  background-position: -94px -110px;
+  background-position: 0px -150px;
   width: 45px;
   height: 26px; }
